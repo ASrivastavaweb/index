@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background: linear-gradient(135deg, #ffcc33, #ff66cc);
+            text-align: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            background-image: url(HEART.jpg);
+        }
+        .container {
+            padding: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            font-size: 4em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px #ff0066;
+            animation: floatTitle 3s ease-in-out infinite;
+        }
+        @keyframes floatTitle {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .images img, .images video {
+            margin: 10px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: calc(50% - 20px);
+            height: auto;
+            animation: floatImage 4s ease-in-out infinite;
+        }
+        .images video {
+            max-width: calc(100% - 20px);
+            border-radius: 0; /* Video remains rectangular */
+        }
+        @keyframes floatImage {
+            0% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+        .balloon {
+            position: absolute;
+            bottom: -100px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            animation: float 6s ease-in-out infinite;
+        }
+        .balloon:nth-child(odd) {
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(even) {
+            animation-duration: 5s;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-600px) rotate(45deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+        .candle {
+            position: absolute;
+            width: 20px;
+            height: 60px;
+            background-color: yellow;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 0, 0.7);
+            animation: flicker 0.5s infinite;
+        }
+        @keyframes flicker {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        .heart {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: red;
+            clip-path: polygon(50% 0%, 61% 20%, 80% 20%, 100% 40%, 100% 70%, 50% 100%, 0 70%, 0 40%, 20% 20%, 39% 20%);
+            animation: floatHeart 6s ease-in-out infinite;
+        }
+        .heart:nth-child(odd) {
+            animation-duration: 7s;
+        }
+        .heart:nth-child(even) {
+            animation-duration: 5s;
+        }
+        @keyframes floatHeart {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-600px) rotate(20deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+        .para {
+            font-size: medium;
+            font-style: italic;
+            color:#f5f5f7;
+            font-size: 25px;
+            background-color: rgb(211, 7, 27);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday Tanya!</h1>
+        <p class="para">Happiest Birthday to the most beautiful girl, not just by looks but by heart also. You are the best and Thank you so much for everything you have done for me. I guess thats why I fell in love with you so deeply because of the affection you showed me. I have never felt before like that and I guess I never will. The point is I fell in love with you and I still am. That is why I don't even want to move on, I want to keep this feeling with me, I want to wait for you. I hope you give me another chance but Even if you never want me, I will always want you. I will always be obsessed with you. I love you so much my jigar ka tukda.
+            HAPPY BIRTHDAY ONCE AGAIN, always be happy, keep smiling and remember one thing that you can do anything and you are more than enough, never let anybody make you feel like you are not, never ever. You are The Tanya Rao. 
+            
+            I know U don't want me but please at any moment of life if you feel that this could work don't hesitate to tell me. We were great together, and I know we can be a lot more than great from now on.
+            
+            HAPPY BIRTHDAY ONCE AGAIN, always be happy, keep smiling and remember one thing that you can do anything and you are more than enough, never let anybody make you feel like you are not, never ever. You are The Tanya Rao.
+            
+            
+            
+             </p>
+        <div class="images">
+            <!-- Add your images and video here -->
+            <img src="Snapchat-1212103843.jpg" alt="Placeholder Image 1">
+            <img src="Snapchat-173326920.jpg" alt="Placeholder Image 2">
+            <img src="T.jpg" alt="Placeholder Image 3">
+            <img src="WhatsApp Image 2023-09-17 at 17.53.01.jpg" alt="Placeholder Image 4">
+            <p class="para">I guess this song is best to express my feeling</p>
+            <div><video controls>
+                <source src="VID_20240728_211440.mp4" type="video/mp4">
+            </video>
+        </div>
+            <img src="IMG-20211118-WA0048.jpg" alt="Placeholder Image 5">
+            <img src="A.jpeg" alt="Placeholder Image 7">
+            <img src="B.jpg" alt="Placeholder Image 5">
+            <img src="IMG-20230521-WA0033.jpg" alt="Placeholder Image 7">
+        </div>
+    </div>
+    <!-- Balloons -->
+    <div class="balloon" style="left: 10%; width: 50px; height: 70px; background-color: #ff6f61;"></div>
+    <div class="balloon" style="left: 20%; width: 60px; height: 90px; background-color: #ffcc00;"></div>
+    <div class="balloon" style="left: 30%; width: 70px; height: 100px; background-color: #ff66ff;"></div>
+    <div class="balloon" style="left: 40%; width: 80px; height: 110px; background-color: #66ccff;"></div>
+    <div class="balloon" style="left: 50%; width: 50px; height: 70px; background-color: #66ff66;"></div>
+    <div class="balloon" style="left: 60%; width: 60px; height: 90px; background-color: #ff6f61;"></div>
+    <div class="balloon" style="left: 70%; width: 70px; height: 100px; background-color: #ffcc00;"></div>
+    <div class="balloon" style="left: 80%; width: 80px; height: 110px; background-color: #ff66ff;"></div>
+    <div class="balloon" style="left: 90%; width: 50px; height: 70px; background-color: #66ccff;"></div>
+    <!-- Candles -->
+    <div class="candle" style="top: 100px; left: 20%;"></div>
+    <div class="candle" style="top: 150px; left: 40%;"></div>
+    <div class="candle" style="top: 200px; left: 60%;"></div>
+    <div class="candle" style="top: 250px; left: 80%;"></div>
+    <div class="candle" style="top: 300px; left: 30%;"></div>
+    <div class="candle" style="bottom: 100px; right: 20%;"></div>
+    <div class="candle" style="bottom: 150px; right: 40%;"></div>
+    <div class="candle" style="bottom: 200px; right: 60%;"></div>
+    <div class="candle" style="bottom: 250px; right: 80%;"></div>
+    <div class="candle" style="bottom: 300px; right: 30%;"></div>
+    <!-- Hearts -->
+    <div class="heart" style="left: 15%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 35%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 45%; animation-delay: 4s;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 5s;"></div>
+    <div class="heart" style="left: 65%; animation-delay: 6s;"></div>
+    <div class="heart" style="left: 75%; animation-delay: 7s;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 8s;"></div>
+
+    <div class="heart" style="left: 15%; animation-delay: 1s; bottom: 20%;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 2s; bottom: 20%;"></div>
+    <div class="heart" style="left: 35%; animation-delay: 3s; bottom: 20%;"></div>
+    <div class="heart" style="left: 45%; animation-delay: 4s; bottom: 20%;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 5s; bottom: 20%;"></div>
+    <div class="heart" style="left: 65%; animation-delay: 6s; bottom: 20%;"></div>
+    <div class="heart" style="left: 75%; animation-delay: 7s; bottom: 20%;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 8s; bottom: 20%;"></div>
+
+    <div class="heart" style="left: 15%; animation-delay: 1s; bottom: 50%;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 2s; bottom: 50%;"></div>
+    <div class="heart" style="left: 35%; animation-delay: 3s; bottom: 50%;"></div>
+    <div class="heart" style="left: 45%; animation-delay: 4s; bottom: 50%;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 5s; bottom: 50%;"></div>
+    <div class="heart" style="left: 65%; animation-delay: 6s; bottom: 50%;"></div>
+    <div class="heart" style="left: 75%; animation-delay: 7s; bottom: 50%;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 8s; bottom: 50%;"></div>
+
+    <div class="heart" style="left: 15%; animation-delay: 1s; top: 20%;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 2s; top: 20%;"></div>
+    <div class="heart" style="left: 35%; animation-delay: 3s; top: 20%;"></div>
+    <div class="heart" style="left: 45%; animation-delay: 4s; top: 20%;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 5s; top: 20%;"></div>
+    <div class="heart" style="left: 65%; animation-delay: 6s; top: 20%;"></div>
+    <div class="heart" style="left: 75%; animation-delay: 7s; top: 20%;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 8s; top: 20%;"></div>
+
+    <div class="heart" style="left: 15%; animation-delay: 1s; top: 50%;"></div>
+    <div class="heart" style="left: 25%; animation-delay: 2s; top: 50%;"></div>
+    <div class="heart" style="left: 35%; animation-delay: 3s; top: 50%;"></div>
+    <div class="heart" style="left: 45%; animation-delay: 4s; top: 50%;"></div>
+    <div class="heart" style="left: 55%; animation-delay: 5s; top: 50%;"></div>
+    <div class="heart" style="left: 65%; animation-delay: 6s; top: 50%;"></div>
+    <div class="heart" style="left: 75%; animation-delay: 7s; top: 50%;"></div>
+    <div class="heart" style="left: 85%; animation-delay: 8s; top: 50%;"></div>
+</body>
+</html>
