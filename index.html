@@ -265,26 +265,23 @@
     <div class="heart" style="left: 85%; animation-delay: 8s; top: 50%;"></div>
 
     <script>
-        window.addEventListener('load', function() {
-        var backgroundMusic = document.getElementById('backgroundMusic');
-        backgroundMusic.play();
+        const backgroundMusic = document.getElementById('background-music');
+    const video = document.getElementById('video');
+
+    // Start playing the background music as soon as the page loads
+    window.addEventListener('load', () => {
+      backgroundMusic.play();
     });
 
-    var videoPlayer = document.getElementById('videoPlayer');
-    var backgroundMusic = document.getElementById('backgroundMusic');
-
-    videoPlayer.addEventListener('play', function() {
-        backgroundMusic.pause();
+    // Add an event listener to the video element to pause the background music when the video is played
+    video.addEventListener('play', () => {
+      backgroundMusic.pause();
     });
 
-    videoPlayer.addEventListener('pause', function() {
-        backgroundMusic.play();
+    // Add an event listener to the video element to resume the background music when the video is paused
+    video.addEventListener('pause', () => {
+      backgroundMusic.play();
     });
-
-    videoPlayer.addEventListener('ended', function() {
-        backgroundMusic.play();
-    });
-        
     </script>
 </body>
 </html>
